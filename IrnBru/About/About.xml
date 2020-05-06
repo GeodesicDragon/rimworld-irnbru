@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Irn Bru</name>
+	<author>GeodesicDragon</author>
+	<packageId>geodesicdragon.irnbru</packageId>
+	<url>https://discord.gg/BGKnpza</url>
+	<supportedVersions>
+		<li>1.1</li>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>Scotland's other national drink, now available for consumption on the rimworlds!\n\n- Made at the brewing table using steel.\n- 25 steel produces 5 bottles of Bru.\n- Provides some nutrition and recreation.\n- Has a mass of 0.2 and a market value of 1.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Manufactured' category in stockpiles (remember to update yours to accept the new item).\n- Pawns will automatically drink this if they are desperate for nutrition.\n\nIrn-Bru is a registered trademark of AG Barr plc and is used with permission.</description>
+</ModMetaData>
+
+<!--CHANGELOG
+
+Version 1.0.1 (May 1st 2020)
+
+- Initial Release.-->

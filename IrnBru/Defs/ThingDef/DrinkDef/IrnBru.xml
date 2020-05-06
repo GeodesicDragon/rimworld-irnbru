@@ -1,0 +1,92 @@
+<Defs>
+  <ThingDef ParentName="DrugBase">
+    <defName>IrnBru</defName>
+    <label>Irn-Bru</label>
+    <description>Scotland's other national drink, now available for consumption on the rimworlds.\n\nFulfills the need for recreation and nutrition, but not by much.</description>
+    <graphicData>
+      <texPath>Things/Item/BruBottle</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.3</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+	  <tasteThought>DrankBru</tasteThought>
+      <joyKind>Gluttonous</joyKind>
+      <joy>0.3</joy>
+      <nurseable>true</nurseable>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+	  <!--<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>-->
+	  <preferability>DesperateOnly</preferability>
+    </ingestible>
+    <techLevel>Industrial</techLevel>
+	<thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Make_Bru</defName>
+    <label>make Irn-Bru</label>
+    <description>Make Irn-Bru from steel.</description>
+    <jobString>Making Irn-Bru.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>1200</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <IrnBru>5</IrnBru>
+    </products>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+	<ThoughtDef>
+    <defName>DrankBru</defName>
+	<durationDays>0.25</durationDays>
+	<validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>drank an Irn-Bru</label>
+        <description>Och aye, that's awfy guid.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
