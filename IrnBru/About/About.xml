@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Irn Bru</name>
+	<name>Irn Bru And Deep-Fried Chocolate</name>
 	<author>GeodesicDragon</author>
 	<packageId>geodesicdragon.irnbru</packageId>
 	<url>https://discord.gg/BGKnpza</url>
@@ -8,11 +8,30 @@
 		<li>1.1</li>
 		<li>1.0</li>
 	</supportedVersions>
-	<description>Scotland's other national drink, now available for consumption on the rimworlds!\n\n- Made at the brewing table using steel.\n- 25 steel produces 5 bottles of Bru.\n- Provides some nutrition and recreation.\n- Has a mass of 0.2 and a market value of 1.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Manufactured' category in stockpiles (remember to update yours to accept the new item).\n- Pawns will automatically drink this if they are desperate for nutrition.\n\nIrn-Bru is a registered trademark of AG Barr plc and is used with permission.</description>
+	<description>IRN-BRU\n\nScotland's other national drink, now available for consumption on the rimworlds!\n\n- Made at the brewing table using steel.\n- 20 steel produces 5 bottles of Bru.\n- Provides some nutrition and recreation.\n- Has a mass of 0.2 and a market value of 1.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Manufactured' category in stockpiles (remember to update yours).\n- Pawns will automatically drink this if they are in need of recreation.\n- Requires refigeration or freezing, with a rot time of 3 days.\n\nIrn-Bru is a registered trademark of AG Barr plc and is used with permission.\n\nDEEP-FRIED CHOCOLATE\n\nAnother delicacy often associated with Scotland makes its way to the rimworlds.\n\n-Made at an electric stove using chocolate.\n-10 chocolate produces 5 deep-fried chocolate.\n- Provides the same amount of nutrition as a simple meal.\n- Has the same mass as regular chocolate, but half the market value.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Foods' category in stockpiles (remember to update yours).\n- Requires refigeration or freezing, with a rot time of 1 day.</description>
 </ModMetaData>
 
 <!--CHANGELOG
 
-Version 1.0.1 (May 1st 2020)
+Version 1.1.9 (May 8th 2020)
+
+* Added a new recipe: deep-fried chocolate.
+	* Requires 10 chocolate to make 5 deep-fried chocolate.
+	* Has the same nutritional value as a simple meal.
+	* Has half the market value of regular chocolate.
+	* Provides a +3 mood bonus for 6 hours when consumed.
+	* Requires refrigeration or freezing; it will begin rotting a day after manufacture.
+	* I know it's not exactly a Mars Bar, but chances are they would have refused me permission to use the product name. At the end of the day, however, it's still deep-fried chocolate.
+	* I tried to give it a chance of causing a heart attack, but I couldn't get it to work; if you can help, please get in touch.
+* Irn-Bru is no longer flammable.
+* Irn-Bru now requires refrigeration or freezing; it will begin rotting in 3 days after manufacture.
+* Increased mass to 0.5 (was 0.2). This is the same weight as a standard 500ml bottle.
+* Reduced nutritional value to 5% (was 30% by mistake).
+* Reduced recreation value to 5% (was 30% by mistake).
+* Recipe now requires 20 steel, down from 25, but it will still produce 5 bottles.
+* Reduced work amount to 10 (was 20).
+* Animals should no longer consume your Bru, even if they're desperate for nutrition, and your colonists should now seek it out for a recreation bonus.
+
+Version 1.0.1 (May 6th 2020)
 
 - Initial Release.-->

@@ -1,96 +1,97 @@
 <Defs>
-  <ThingDef ParentName="DrugBase">
-    <defName>IrnBru</defName>
-    <label>Irn-Bru</label>
-    <description>Scotland's other national drink, now available for consumption on the rimworlds.\n\nFulfills the need for recreation and nutrition, but not by much.</description>
+  <ThingDef ParentName="MealBase">
+    <defName>DeepFriedChocolate</defName>
+    <label>deep-fried chocolate</label>
+    <description>Chocolate, covered in batter, then chucked into hot oil and fried.\n\nWhat's not to love?</description>
     <graphicData>
-      <texPath>Things/Item/BruBottle</texPath>
+      <texPath>Things/Item/DeepFriedChocolate</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
     <rotatable>false</rotatable>
     <stackLimit>50</stackLimit>
     <statBases>
-      <MarketValue>1</MarketValue>
-      <Mass>0.5</Mass>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.075</Mass>
       <Flammability>0</Flammability>
-      <Nutrition>0.05</Nutrition>
+      <Nutrition>0.9</Nutrition>
     </statBases>
     <ingestible>
-      <foodType>Fluid, Processed</foodType>
-	  <tasteThought>DrankBru</tasteThought>
+      <foodType>Processed</foodType>
+	  <tasteThought>AteDFC</tasteThought>
       <joyKind>Gluttonous</joyKind>
-      <joy>0.05</joy>
+      <joy>0.25</joy>
       <nurseable>true</nurseable>
-      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
       <ingestHoldOffsetStanding>
         <northDefault>
           <offset>(0.18,0,0)</offset>
         </northDefault>
       </ingestHoldOffsetStanding>
-      <ingestCommandString>Drink an {0}</ingestCommandString>
-      <ingestReportString>Drinking an {0}.</ingestReportString>
+      <ingestCommandString>Eat {0}</ingestCommandString>
+      <ingestReportString>Eating {0}.</ingestReportString>
       <chairSearchRadius>25</chairSearchRadius>
-	  <preferability>NeverForNutrition</preferability>
+	  <preferability>MealSimple</preferability>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
     </ingestible>
     <techLevel>Industrial</techLevel>
 	<thingCategories>
-      <li>Manufactured</li>
+      <li>Foods</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>3</daysToRotStart>
+        <daysToRotStart>1</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
-	<tickerType>Normal</tickerType>
   </ThingDef>
 
   <RecipeDef>
-    <defName>Make_Bru</defName>
-    <label>make Irn-Bru</label>
-    <description>Make Irn-Bru from steel.</description>
-    <jobString>Making Irn-Bru.</jobString>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <defName>DeepFryChocolate</defName>
+    <label>make deep-fried chocolate</label>
+    <description>Deep-fry chocolate to increase its nutritional value.</description>
+    <jobString>Deep-frying chocolate.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Brewing</soundWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>false</allowMixingIngredients>
     <workAmount>600</workAmount>
 	<recipeUsers>
-		<li>Brewery</li>
+		<li>ElectricStove</li>
 	</recipeUsers>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>Steel</li>
+            <li>Chocolate</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Steel</li>
+        <li>Chocolate</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <IrnBru>5</IrnBru>
+      <DeepFriedChocolate>5</DeepFriedChocolate>
     </products>
     <researchPrerequisites>
-      <li>Brewing</li>
+      <li>Cocoa</li>
     </researchPrerequisites>
   </RecipeDef>
   
 	<ThoughtDef>
-    <defName>DrankBru</defName>
+    <defName>AteDFC</defName>
 	<durationDays>0.25</durationDays>
 	<validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>drank an Irn-Bru</label>
-        <description>Och aye, that's awfy guid.</description>
+        <label>ate some deep-fried chocolate</label>
+        <description>I can feel my cholestrol levels rising, and it feels good!</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
