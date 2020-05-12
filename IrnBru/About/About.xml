@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Irn Bru And Deep-Fried Chocolate</name>
+	<name>Irn Bru And Other Scottish Delicacies</name>
 	<author>GeodesicDragon</author>
 	<packageId>geodesicdragon.irnbru</packageId>
 	<url>https://discord.gg/BGKnpza</url>
@@ -8,10 +8,22 @@
 		<li>1.1</li>
 		<li>1.0</li>
 	</supportedVersions>
-	<description>IRN-BRU\n\nScotland's other national drink, now available for consumption on the rimworlds!\n\n- Made at the brewing table using steel.\n- 20 steel produces 5 bottles of Bru.\n- Provides some nutrition and recreation.\n- Has a mass of 0.2 and a market value of 1.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Manufactured' category in stockpiles (remember to update yours).\n- Pawns will automatically drink this if they are in need of recreation.\n- Requires refigeration or freezing, with a rot time of 3 days.\n\nIrn-Bru is a registered trademark of AG Barr plc and is used with permission.\n\nDEEP-FRIED CHOCOLATE\n\nAnother delicacy often associated with Scotland makes its way to the rimworlds.\n\n-Made at an electric stove using chocolate.\n-10 chocolate produces 5 deep-fried chocolate.\n- Provides the same amount of nutrition as a simple meal.\n- Has the same mass as regular chocolate, but half the market value.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Foods' category in stockpiles (remember to update yours).\n- Requires refigeration or freezing, with a rot time of 1 day.</description>
+	<description>IRN-BRU\n\nScotland's other national drink, now available for consumption on the rimworlds!\n\n- Made at the brewing table using steel.\n- 20 steel produces 5 bottles of Bru.\n- Provides some nutrition and recreation.\n- Has a mass of 0.2 and a market value of 1.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Manufactured' category in stockpiles (remember to update yours).\n- Pawns will automatically drink this if they are in need of recreation.\n- Requires refigeration or freezing, with a rot time of 3 days.\n\nIrn-Bru is a registered trademark of AG Barr plc and is used with permission.\n\nDEEP-FRIED CHOCOLATE\n\nAnother delicacy often associated with Scotland makes its way to the rimworlds.\n\n-Made at a campfire, fueled stove or electric stove using chocolate.\n-10 chocolate produces 5 deep-fried chocolate.\n- Counts as a simple meal.\n- Has the same mass as regular chocolate, but half the market value.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Foods' category in stockpiles (remember to update yours).\n- Requires refigeration or freezing, with a rot time of 1 day.\n\nHAGGIS\n\nScotland's national dish makes its way to the rimworlds.\n\n- Made at a campfire, fueled stove or electric stove using any kind of meat.\n- Counts as a fine meal.\n- Provides a +3 bonus to mood for 6 hours when consumed.</description>
 </ModMetaData>
 
 <!--CHANGELOG
+
+Version 1.4.11 (May 12th 2020)
+
+* Moved Irn-Bru from the 'Manufactured' category to the 'Foods' category.
+* Deep-fried chocolate can now be made at a fueled stove or campfire.
+* Added a recipe to make 20 deep-fried chocolate at once.
+* Added a recipe to make 20 Irn-Bru at once.
+* Added a new recipe: haggis.
+	* Made using any kind of meat at a campfire, electric stove or fueled stove.
+	* Has the same nutritional value as a fine meal.
+	* Provides a +3 bonus to mood for 6 hours when consumed.
+	* Can also be made four at a time.
 
 Version 1.1.9 (May 8th 2020)
 
@@ -35,3 +47,9 @@ Version 1.1.9 (May 8th 2020)
 Version 1.0.1 (May 6th 2020)
 
 - Initial Release.-->
+
+<!--CREDITS
+
+Haggis image from http://www.amityrf283.org.uk/burns%20night%202013.html - Used without permission; can and will be changed if requested.
+
+-->

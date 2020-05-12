@@ -1,0 +1,118 @@
+<Defs>
+  <ThingDef ParentName="MealBase">
+    <defName>Haggis</defName>
+    <label>haggis</label>
+    <description>A Scottish delicacy which is normally made using various sheep parts, though on the rimworlds it's made from whatever meat you have lying around.</description>
+    <graphicData>
+      <texPath>Things/Item/Haggis</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Meal</foodType>
+	  <tasteThought>AteHaggis</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Eat {0}</ingestCommandString>
+      <ingestReportString>Eating {0}.</ingestReportString>
+	  <preferability>MealFine</preferability>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+    <techLevel>Neolithic</techLevel>
+	<thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>MakeHaggis</defName>
+    <label>make haggis</label>
+    <description>Make haggis from meat.</description>
+    <jobString>Making haggis.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>450</workAmount>
+	<recipeUsers>
+		<li>Campfire</li>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <Haggis>1</Haggis>
+    </products>
+  </RecipeDef>
+  
+    <RecipeDef ParentName="CookMealBase">
+    <defName>MakeFourHaggis</defName>
+    <label>make haggis x4</label>
+    <description>Make 4 haggis from meat.</description>
+    <jobString>Making 4 haggis.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>1800</workAmount>
+	<recipeUsers>
+		<li>ElectricStove</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <products>
+      <Haggis>4</Haggis>
+    </products>
+  </RecipeDef>
+  
+	<ThoughtDef>
+    <defName>AteHaggis</defName>
+	<durationDays>0.25</durationDays>
+	<validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>ate haggis</label>
+        <description>Who'd have thought that meat could be used in such a way?</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

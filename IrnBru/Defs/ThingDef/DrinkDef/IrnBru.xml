@@ -35,7 +35,7 @@
     </ingestible>
     <techLevel>Industrial</techLevel>
 	<thingCategories>
-      <li>Manufactured</li>
+      <li>Foods</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -77,6 +77,43 @@
     </fixedIngredientFilter>
     <products>
       <IrnBru>5</IrnBru>
+    </products>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeFourBru</defName>
+    <label>make Irn-Bru x4</label>
+    <description>Make 4 lots of Irn-Bru from steel.</description>
+    <jobString>Making Irn-Bru x4.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>2400</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <IrnBru>20</IrnBru>
     </products>
     <researchPrerequisites>
       <li>Brewing</li>

@@ -84,6 +84,45 @@
     </researchPrerequisites>
   </RecipeDef>
   
+    <RecipeDef>
+    <defName>DeepFryFourChocolate</defName>
+    <label>make deep-fried chocolate x4</label>
+    <description>Deep-fry 4 loads chocolate to increase its nutritional value.</description>
+    <jobString>Deep-frying 4 loads of chocolate.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>2400</workAmount>
+	<recipeUsers>
+		<li>Campfire</li>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chocolate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DeepFriedChocolate>20</DeepFriedChocolate>
+    </products>
+    <researchPrerequisites>
+      <li>Cocoa</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
 	<ThoughtDef>
     <defName>AteDFC</defName>
 	<durationDays>0.25</durationDays>
