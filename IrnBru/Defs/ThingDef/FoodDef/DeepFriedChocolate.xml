@@ -2,10 +2,10 @@
   <ThingDef ParentName="MealBase">
     <defName>DeepFriedChocolate</defName>
     <label>deep-fried chocolate</label>
-    <description>Chocolate, covered in batter, then chucked into hot oil and fried.\n\nWhat's not to love?</description>
+    <description>Chocolate, covered in batter, then dunked into hot oil and fried.\n\nWhat's not to love?</description>
     <graphicData>
       <texPath>Things/Item/DeepFriedChocolate</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
     <rotatable>false</rotatable>
@@ -13,7 +13,7 @@
     <statBases>
       <MarketValue>1.5</MarketValue>
       <Mass>0.075</Mass>
-      <Flammability>0</Flammability>
+      <Flammability>1.0</Flammability>
       <Nutrition>0.9</Nutrition>
     </statBases>
     <ingestible>

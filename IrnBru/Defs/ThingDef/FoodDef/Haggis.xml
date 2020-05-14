@@ -2,7 +2,7 @@
   <ThingDef ParentName="MealBase">
     <defName>Haggis</defName>
     <label>haggis</label>
-    <description>A Scottish delicacy which is normally made using various sheep parts, though on the rimworlds it's made from whatever meat you have lying around.</description>
+    <description>A Scottish delicacy which is normally made using various sheep parts; on the rimworlds, however, it's made from whatever meat you have lying around.</description>
     <graphicData>
       <texPath>Things/Item/Haggis</texPath>
       <graphicClass>Graphic_Single</graphicClass>
