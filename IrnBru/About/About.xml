@@ -8,10 +8,31 @@
 		<li>1.1</li>
 		<li>1.0</li>
 	</supportedVersions>
-	<description>IRN-BRU\n\nScotland's other national drink, now available for consumption on the rimworlds!\n\n- Made at the brewing table using steel or berries.\n- 20/80 steel or 40/160 berries each produce 5/20 bottles of Bru.\n- Provides some nutrition and recreation.\n- Has a mass of 0.2 and a market value of 1.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Manufactured' category in stockpiles (remember to update yours).\n- Pawns will automatically drink this if they are in need of recreation.\n- Requires refigeration or freezing, with a rot time of 3 days.\n\nIrn-Bru is a registered trademark of AG Barr plc and is used with permission.\n\nDEEP-FRIED CHOCOLATE\n\nAnother delicacy often associated with Scotland makes its way to the rimworlds.\n\n- Made at a campfire, fueled stove or electric stove using chocolate.\n- 10/40 chocolate produces 5/20 deep-fried chocolate.\n- Counts as a simple meal.\n- Has the same mass as regular chocolate, but half the market value.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Foods' category in stockpiles (remember to update yours).\n- Requires refigeration or freezing, with a rot time of 1 day.\n\nHAGGIS\n\nScotland's national dish makes its way to the rimworlds.\n\n- Made at a campfire, fueled stove or electric stove using any kind of meat.\n- Counts as a fine meal.\n- Provides a +3 bonus to mood for 6 hours when consumed.\n- Requires refrigeration or freezing, with a rot time of 3 days.</description>
+	<description>IRN-BRU\n\nScotland's other national drink, now available for consumption on the rimworlds!\n\n- Made at the brewing table using steel or berries.\n- 20/80 steel or 40/160 berries each produce 5/20 bottles of Bru.\n- Provides some nutrition and recreation.\n- Has a mass of 0.2 and a market value of 1.5.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Manufactured' category in stockpiles (remember to update yours).\n- Pawns will automatically drink this if they are in need of nutrition.\n- Requires refigeration or freezing, with a rot time of 3 days.\n- Causes a sugar rush, increasing movement speed for a short time.\n\nIrn-Bru is a registered trademark of AG Barr plc and is used with permission.\n\nDEEP-FRIED CHOCOLATE\n\nAnother delicacy often associated with Scotland makes its way to the rimworlds.\n\n- Made at a campfire, fueled stove or electric stove using chocolate.\n- 10/40 chocolate produces 5/20 deep-fried chocolate.\n- Counts as a simple meal.\n- Has the same mass as regular chocolate, but half the market value.\n- Gives a +3 mood bonus for 6 hours when consumed.\n- Appears under the 'Foods' category in stockpiles (remember to update yours).\n- Requires refigeration or freezing, with a rot time of 3 days.\n- Causes cholestrol buildup; eating too much can cause a heart attack.\n\nHAGGIS\n\nScotland's national dish makes its way to the rimworlds.\n\n- Made at a campfire, fueled stove or electric stove using any kind of meat.\n- Counts as a fine meal.\n- Provides a +3 bonus to mood for 6 hours when consumed.\n- Requires refrigeration or freezing, with a rot time of 3 days.\n\nSCOTTISH GOODS TRADER\n\n- Buys and sells Irn-Bru, deep-fried chocolate and haggis.\n- Available as a land caravan and orbital trader, the latter having twice as much stock as the former.</description>
 </ModMetaData>
 
 <!--CHANGELOG
+
+Version 1.9.26 (May 19th 2020)
+
+* Added the Scottish goods trader.
+	* Buys and sells Irn-Bru, deep-fried chocolate and haggis.
+	* Available as both a land caravan and an orbital trader, the latter having twice as much stock than the former.
+* Added consumption effects to Irn-Bru and deep-fried chocolate.
+	* Eating deep-fried chocolate now builds up cholestrol, which affects blood filtration and pumping. Eating too much carries the risk of a heart attack.
+	* Drinking Irn-Bru now causes a sugar rush, which increases movement speed by up to 25% depending on the amount consumed, but wears off quite fast.
+* Increased rot time of deep-fried chocolate to 3 (was 1).
+* Increased market value of deep-fried chocolate to 2 (was 1.5).
+* The bill to make four lots of haggis should now be available at the campfire and fueled stove.
+* The bill to make a single deep-fried chocolate should now be available at the campfire and fueled stove.
+* Irn-Bru is no longer classified as a drug.
+* Increased nutritional and joy values of Irn-Bru to 0.1 (was 0.05)
+* Colonists can now ingest a maximum of three Irn-Brus at once.
+
+Version 1.5.19 (May 14th 2020)
+
+* Fixed work amount of making 4 lots of Irn-Bru from berries being lower than it should.
+* Changed preferability of Irn-Bru to hopefully encourage colonists to drink it without having to be told.
 
 Version 1.5.17 (May 14th 2020)
 
@@ -58,9 +79,3 @@ Version 1.1.9 (May 8th 2020)
 Version 1.0.1 (May 6th 2020)
 
 - Initial Release.-->
-
-<!--CREDITS
-
-Haggis image from http://www.amityrf283.org.uk/burns%20night%202013.html - Used without permission; can and will be changed if requested.
-
--->

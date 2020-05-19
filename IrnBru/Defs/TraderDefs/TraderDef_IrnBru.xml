@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>Caravan_Scottish_Goods</defName>
+		<label>Scottish goods trader</label>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>150~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBru</thingDef>
+				<countRange>25~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis</thingDef>
+				<countRange>30~90</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DeepFriedChocolate</thingDef>
+				<countRange>30~90</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+	
+	<TraderKindDef>
+		<defName>Orbital_Scottish_Goods</defName>
+		<label>Scottish goods trader</label>
+		<orbital>true</orbital>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>300~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBru</thingDef>
+				<countRange>50~200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis</thingDef>
+				<countRange>60~270</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DeepFriedChocolate</thingDef>
+				<countRange>60~270</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

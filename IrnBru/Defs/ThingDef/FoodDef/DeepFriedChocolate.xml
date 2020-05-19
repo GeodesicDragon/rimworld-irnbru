@@ -2,7 +2,7 @@
   <ThingDef ParentName="MealBase">
     <defName>DeepFriedChocolate</defName>
     <label>deep-fried chocolate</label>
-    <description>Chocolate, covered in batter, then dunked into hot oil and fried.\n\nWhat's not to love?</description>
+    <description>Chocolate, covered in batter, then dunked into hot oil and fried.\n\nWhat's not to like?</description>
     <graphicData>
       <texPath>Things/Item/DeepFriedChocolate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -11,7 +11,7 @@
     <rotatable>false</rotatable>
     <stackLimit>50</stackLimit>
     <statBases>
-      <MarketValue>1.5</MarketValue>
+      <MarketValue>2</MarketValue>
       <Mass>0.075</Mass>
       <Flammability>1.0</Flammability>
       <Nutrition>0.9</Nutrition>
@@ -34,17 +34,23 @@
       <chairSearchRadius>25</chairSearchRadius>
 	  <preferability>MealSimple</preferability>
 	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DFC_HeartAttackChance</hediffDef>
+          <severity>0.15</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <techLevel>Industrial</techLevel>
 	<thingCategories>
       <li>Foods</li>
     </thingCategories>
     <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>1</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
+	<li Class="CompProperties_Rottable">
+		<daysToRotStart>3</daysToRotStart>
+		<rotDestroys>true</rotDestroys>
+	</li>
+	</comps>
   </ThingDef>
 
   <RecipeDef>
@@ -59,7 +65,9 @@
     <allowMixingIngredients>false</allowMixingIngredients>
     <workAmount>600</workAmount>
 	<recipeUsers>
+		<li>Campfire</li>
 		<li>ElectricStove</li>
+		<li>FueledStove</li>
 	</recipeUsers>
     <ingredients>
       <li>
@@ -134,5 +142,72 @@
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
-  </ThoughtDef>
+  </ThoughtDef>  
+  
+<HediffDef>
+    <defName>DFC_HeartAttackChance</defName>
+    <label>high cholestrol</label>
+    <description>High cholestrol caused by excessive consumption of deep-fried chocolate. Affects blood filtration and pumping, and can even cause cardiac arrest.</description>
+    <labelNoun>cholestrol</labelNoun>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+		<li>
+		<label>initial</label>
+		<minSeverity>0.3</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>BloodFiltration</capacity>
+			<offset>-0.05</offset>
+		  </li>
+		  <li>
+			<capacity>BloodPumping</capacity>
+			<offset>-0.05</offset>
+		  </li>
+		</capMods>
+		</li>
+		<li>
+		<label>severe</label>
+		<minSeverity>0.6</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>BloodFiltration</capacity>
+			<offset>-0.10</offset>
+		  </li>
+		  <li>
+			<capacity>BloodPumping</capacity>
+			<offset>-0.10</offset>
+		  </li>
+		</capMods>
+		</li>
+		  <li>
+			<label>extreme</label>
+			<minSeverity>0.9</minSeverity>
+			<capMods>
+			  <li>
+				<capacity>BloodFiltration</capacity>
+				<offset>-0.15</offset>
+			  </li>
+			  <li>
+				<capacity>BloodPumping</capacity>
+				<offset>-0.15</offset>
+			  </li>
+			</capMods>
+			<hediffGivers>
+			<li Class="HediffGiver_Random">
+				<hediff>HeartAttack</hediff>
+				<mtbDays>30</mtbDays>
+					<partsToAffect>
+						<li>Heart</li>
+					</partsToAffect>
+			</li>
+			</hediffGivers>
+		</li>
+	</stages>
+</HediffDef>
 </Defs>

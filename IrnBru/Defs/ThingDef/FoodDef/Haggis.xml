@@ -64,6 +64,7 @@
         <filter>
           <categories>
             <li>MeatRaw</li>
+			<li>MeatRaw</li>
           </categories>
         </filter>
         <count>10</count>
@@ -73,7 +74,7 @@
       <Haggis>1</Haggis>
     </products>
   </RecipeDef>
-  
+
     <RecipeDef ParentName="CookMealBase">
     <defName>MakeFourHaggis</defName>
     <label>make haggis x4</label>
@@ -86,13 +87,16 @@
     <allowMixingIngredients>false</allowMixingIngredients>
     <workAmount>1800</workAmount>
 	<recipeUsers>
+		<li>Campfire</li>
 		<li>ElectricStove</li>
+		<li>FueledStove</li>
 	</recipeUsers>
     <ingredients>
       <li>
         <filter>
           <categories>
             <li>MeatRaw</li>
+			<li>MeatRaw</li>
           </categories>
         </filter>
         <count>40</count>
@@ -102,7 +106,7 @@
       <Haggis>4</Haggis>
     </products>
   </RecipeDef>
-  
+
 	<ThoughtDef>
     <defName>AteHaggis</defName>
 	<durationDays>0.25</durationDays>

@@ -1,8 +1,9 @@
 <Defs>
-  <ThingDef ParentName="DrugBase">
+  <ThingDef ParentName="MealBase">
     <defName>IrnBru</defName>
     <label>Irn-Bru</label>
-    <description>Scotland's other national drink, now available for consumption on the rimworlds.\n\nFulfills the need for recreation and nutrition, but not by much.</description>
+	<socialPropernessMatters>true</socialPropernessMatters>
+    <description>Scotland's other national drink, now available for consumption on the rimworlds.</description>
     <graphicData>
       <texPath>Things/Item/BruBottle</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -14,13 +15,13 @@
       <MarketValue>1.5</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
-      <Nutrition>0.05</Nutrition>
+      <Nutrition>0.1</Nutrition>
     </statBases>
     <ingestible>
       <foodType>Fluid, Processed</foodType>
 	  <tasteThought>DrankBru</tasteThought>
       <joyKind>Gluttonous</joyKind>
-      <joy>0.05</joy>
+      <joy>0.1</joy>
       <nurseable>true</nurseable>
       <ingestSound>Ingest_Beer</ingestSound>
       <ingestHoldOffsetStanding>
@@ -31,7 +32,14 @@
       <ingestCommandString>Drink an {0}</ingestCommandString>
       <ingestReportString>Drinking an {0}.</ingestReportString>
       <chairSearchRadius>25</chairSearchRadius>
-	  <preferability>NeverForNutrition</preferability>
+	  <preferability>RawTasty</preferability>
+	  <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>IrnBru_SugarRush</hediffDef>
+          <severity>0.3</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <techLevel>Industrial</techLevel>
 	<thingCategories>
@@ -167,7 +175,7 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
     <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>600</workAmount>
+    <workAmount>2400</workAmount>
 	<recipeUsers>
 		<li>Brewery</li>
 	</recipeUsers>
@@ -206,4 +214,50 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <HediffDef>
+    <defName>IrnBru_SugarRush</defName>
+    <label>sugar rush</label>
+    <description>A sudden and brief burst of energy supposedly experienced after the consumption of food or drink with a high sugar content.</description>
+    <labelNoun>sugars</labelNoun>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+		<li>
+		<label>low</label>
+		<minSeverity>0.3</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>+0.1</offset>
+		  </li>
+		</capMods>
+		</li>
+		<li>
+		<label>medium</label>
+		<minSeverity>0.6</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>+0.2</offset>
+		  </li>
+		</capMods>
+		</li>
+		<li>
+		<label>high</label>
+		<minSeverity>0.9</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>+0.3</offset>
+		  </li>
+		</capMods>
+		</li>
+	</stages>
+</HediffDef>
 </Defs>
