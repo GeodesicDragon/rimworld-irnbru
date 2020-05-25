@@ -10,7 +10,7 @@
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
     <rotatable>false</rotatable>
-    <stackLimit>50</stackLimit>
+    <stackLimit>100</stackLimit>
     <statBases>
       <MarketValue>1.5</MarketValue>
       <Mass>0.5</Mass>
@@ -29,8 +29,8 @@
           <offset>(0.18,0,0)</offset>
         </northDefault>
       </ingestHoldOffsetStanding>
-      <ingestCommandString>Drink an {0}</ingestCommandString>
-      <ingestReportString>Drinking an {0}.</ingestReportString>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
       <chairSearchRadius>25</chairSearchRadius>
 	  <preferability>RawTasty</preferability>
 	  <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
@@ -53,6 +53,8 @@
     </comps>
 	<tickerType>Normal</tickerType>
   </ThingDef>
+  
+  <!--STEEL RECIPES-->
 
   <RecipeDef>
     <defName>Make_Bru</defName>
@@ -90,8 +92,84 @@
       <li>Brewing</li>
     </researchPrerequisites>
   </RecipeDef>
+   
+  <RecipeDef>
+    <defName>MakeFourBru</defName>
+    <label>make Irn-Bru (steel) x4</label>
+    <description>Make 4 lots of Irn-Bru from steel.</description>
+    <jobString>Making Irn-Bru from steel.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>1800</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <IrnBru>20</IrnBru>
+    </products>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+  </RecipeDef>
   
     <RecipeDef>
+    <defName>MakeEightBru</defName>
+    <label>make Irn-Bru (steel) x8</label>
+    <description>Make 8 lots of Irn-Bru from steel.</description>
+    <jobString>Making Irn-Bru from steel.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>3600</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>160</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <IrnBru>40</IrnBru>
+    </products>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <!--BERRY RECIPES-->
+  
+      <RecipeDef>
     <defName>Make_Bru_Berries</defName>
     <label>make Irn-Bru (berries)</label>
     <description>Make Irn-Bru from berries.</description>
@@ -128,54 +206,17 @@
     </researchPrerequisites>
   </RecipeDef>
   
-  <RecipeDef>
-    <defName>MakeFourBru</defName>
-    <label>make Irn-Bru (steel) x4</label>
-    <description>Make 4 lots of Irn-Bru from steel.</description>
-    <jobString>Making Irn-Bru x4 from steel.</jobString>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Brewing</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>2400</workAmount>
-	<recipeUsers>
-		<li>Brewery</li>
-	</recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>80</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <IrnBru>20</IrnBru>
-    </products>
-    <researchPrerequisites>
-      <li>Brewing</li>
-    </researchPrerequisites>
-  </RecipeDef>
-  
     <RecipeDef>
     <defName>MakeFourBruBerries</defName>
     <label>make Irn-Bru (berries) x4</label>
     <description>Make 4 lots of Irn-Bru from berries.</description>
-    <jobString>Making Irn-Bru x4 from berries.</jobString>
+    <jobString>Making Irn-Bru from berries.</jobString>
     <workSpeedStat>DrugCookingSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
     <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>2400</workAmount>
+    <workAmount>1800</workAmount>
 	<recipeUsers>
 		<li>Brewery</li>
 	</recipeUsers>
@@ -196,6 +237,43 @@
     </fixedIngredientFilter>
     <products>
       <IrnBru>20</IrnBru>
+    </products>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+      <RecipeDef>
+    <defName>MakeEightBruBerries</defName>
+    <label>make Irn-Bru (berries) x8</label>
+    <description>Make 8 lots of Irn-Bru from berries.</description>
+    <jobString>Making Irn-Bru from berries.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>3600</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBerries</li>
+          </thingDefs>
+        </filter>
+        <count>320</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawBerries</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <IrnBru>40</IrnBru>
     </products>
     <researchPrerequisites>
       <li>Brewing</li>

@@ -9,9 +9,9 @@
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
     <rotatable>false</rotatable>
-    <stackLimit>50</stackLimit>
+    <stackLimit>100</stackLimit>
     <statBases>
-      <MarketValue>20</MarketValue>
+      <MarketValue>10</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
       <Nutrition>0.9</Nutrition>
@@ -53,7 +53,7 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>450</workAmount>
+    <workAmount>600</workAmount>
 	<recipeUsers>
 		<li>Campfire</li>
 		<li>ElectricStove</li>
@@ -64,7 +64,6 @@
         <filter>
           <categories>
             <li>MeatRaw</li>
-			<li>MeatRaw</li>
           </categories>
         </filter>
         <count>10</count>
@@ -104,6 +103,38 @@
     </ingredients>
     <products>
       <Haggis>4</Haggis>
+    </products>
+  </RecipeDef>
+  
+    <RecipeDef ParentName="CookMealBase">
+    <defName>MakeEightHaggis</defName>
+    <label>make haggis x8</label>
+    <description>Make 8 haggis from meat.</description>
+    <jobString>Making 8 haggis.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>3600</workAmount>
+	<recipeUsers>
+		<li>Campfire</li>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+			<li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <products>
+      <Haggis>8</Haggis>
     </products>
   </RecipeDef>
 

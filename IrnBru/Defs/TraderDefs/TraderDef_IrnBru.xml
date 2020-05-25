@@ -3,22 +3,32 @@
 	<TraderKindDef>
 		<defName>Caravan_Scottish_Goods</defName>
 		<label>Scottish goods trader</label>
+		<commonality>3</commonality>
+		<orbital>false</orbital>
 		<stockGenerators>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
-				<countRange>150~600</countRange>
+				<countRange>250~1000</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>IrnBru</thingDef>
-				<countRange>25~100</countRange>
+				<countRange>50~150</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Haggis</thingDef>
-				<countRange>30~90</countRange>
+				<countRange>50~100</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>DeepFriedChocolate</thingDef>
-				<countRange>30~90</countRange>
+				<countRange>50~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>100~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RawBerries</thingDef>
+				<countRange>200~200</countRange>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>
@@ -26,23 +36,32 @@
 	<TraderKindDef>
 		<defName>Orbital_Scottish_Goods</defName>
 		<label>Scottish goods trader</label>
+		<commonality>3</commonality>
 		<orbital>true</orbital>
 		<stockGenerators>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
-				<countRange>300~1200</countRange>
+				<countRange>500~2000</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>IrnBru</thingDef>
-				<countRange>50~200</countRange>
+				<countRange>100~300</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Haggis</thingDef>
-				<countRange>60~270</countRange>
+				<countRange>100~200</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>DeepFriedChocolate</thingDef>
-				<countRange>60~270</countRange>
+				<countRange>100~200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>100~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RawBerries</thingDef>
+				<countRange>200~200</countRange>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>

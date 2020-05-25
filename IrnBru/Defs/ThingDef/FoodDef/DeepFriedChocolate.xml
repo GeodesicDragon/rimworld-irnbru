@@ -9,7 +9,7 @@
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
     <rotatable>false</rotatable>
-    <stackLimit>50</stackLimit>
+    <stackLimit>100</stackLimit>
     <statBases>
       <MarketValue>2</MarketValue>
       <Mass>0.075</Mass>
@@ -95,14 +95,14 @@
     <RecipeDef>
     <defName>DeepFryFourChocolate</defName>
     <label>make deep-fried chocolate x4</label>
-    <description>Deep-fry 4 loads chocolate to increase its nutritional value.</description>
+    <description>Deep-fry 4 loads of chocolate to increase its nutritional value.</description>
     <jobString>Deep-frying 4 loads of chocolate.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>2400</workAmount>
+    <workAmount>1800</workAmount>
 	<recipeUsers>
 		<li>Campfire</li>
 		<li>ElectricStove</li>
@@ -131,6 +131,45 @@
     </researchPrerequisites>
   </RecipeDef>
   
+    <RecipeDef>
+    <defName>DeepFryEightChocolate</defName>
+    <label>make deep-fried chocolate x8</label>
+    <description>Deep-fry 8 loads of chocolate to increase its nutritional value.</description>
+    <jobString>Deep-frying 8 loads of chocolate.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>3600</workAmount>
+	<recipeUsers>
+		<li>Campfire</li>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chocolate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DeepFriedChocolate>40</DeepFriedChocolate>
+    </products>
+    <researchPrerequisites>
+      <li>Cocoa</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
 	<ThoughtDef>
     <defName>AteDFC</defName>
 	<durationDays>0.25</durationDays>
@@ -147,7 +186,7 @@
 <HediffDef>
     <defName>DFC_HeartAttackChance</defName>
     <label>high cholestrol</label>
-    <description>High cholestrol caused by excessive consumption of deep-fried chocolate. Affects blood filtration and pumping, and can even cause cardiac arrest.</description>
+    <description>High cholestrol caused by excessive consumption of deep-fried chocolate. This has an adverse effects on blood pumping, and can lead to cardiac arrest if it gets too high.</description>
     <labelNoun>cholestrol</labelNoun>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
@@ -162,10 +201,6 @@
 		<minSeverity>0.3</minSeverity>
 		<capMods>
 		  <li>
-			<capacity>BloodFiltration</capacity>
-			<offset>-0.05</offset>
-		  </li>
-		  <li>
 			<capacity>BloodPumping</capacity>
 			<offset>-0.05</offset>
 		  </li>
@@ -176,10 +211,6 @@
 		<minSeverity>0.6</minSeverity>
 		<capMods>
 		  <li>
-			<capacity>BloodFiltration</capacity>
-			<offset>-0.10</offset>
-		  </li>
-		  <li>
 			<capacity>BloodPumping</capacity>
 			<offset>-0.10</offset>
 		  </li>
@@ -189,10 +220,6 @@
 			<label>extreme</label>
 			<minSeverity>0.9</minSeverity>
 			<capMods>
-			  <li>
-				<capacity>BloodFiltration</capacity>
-				<offset>-0.15</offset>
-			  </li>
 			  <li>
 				<capacity>BloodPumping</capacity>
 				<offset>-0.15</offset>
