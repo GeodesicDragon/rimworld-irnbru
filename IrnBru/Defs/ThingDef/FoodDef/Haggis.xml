@@ -33,7 +33,7 @@
     </ingestible>
     <techLevel>Neolithic</techLevel>
 	<thingCategories>
-      <li>Foods</li>
+      <li>Scottish_Foods</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Rottable">

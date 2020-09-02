@@ -1,0 +1,142 @@
+Version 1.16.59 (September 2nd 2020)
+
+* The kilt no longer covers the waist. (1)
+* Increased market value of the kilt to 200 silver (was 150).
+* Increased mass of the kilt to 3 (was 0.5).
+* Reduced the equip time of the kilt to 1 (was 1.5).
+* The kilt can now be made at a crafting spot. (2)
+* Reduced the number of kilts stocked by the Scottish goods trader to 3 (was 2-6).
+* Slightly changed the text for the deep-fried chocolate thought.
+* Made some changes to how cholestrol works. (3)
+	* Cholestrol now takes longer to clear up.
+	* Cholestrol now reduces blood pumping by 10/20/30% per level (was 5/10/15%).
+	* Eating a deep-fried Mars bars now increases a pawn's choletrol to 0.3 (was 0.15).
+	* Pawns with high cholestrol now have a chance of having a heart attack every 7 days (was 30).
+	* High cholestrol is now marked as life threatening; as a result, you will now be warned of a medical emergency whenever a pawn reaches an extreme level of build-up.
+* Re-added the Scottish goods trader as a caravan merchant.
+* Slightly increased how often the Scottish goods trader arrives.
+
+AUTHOR'S NOTES
+
+1. This change allows you to use utility items such as smokepop belts with a kilt equipped.
+2. Kilt makers who lived hundreds of years ago didn't exactly have access to a tailoring bench powered by a geothermal generator, so I guess you could say that this change reflects history.
+3. It was possible for pawns to practically live off deep-fried Mars bars; by the time they needed to eat again, the cholestrol would have cleared up, meaning there was no real danger. These changes increase the risks, and add a bit more realism to the mod; living on these things would kill you in the real world, so why should it be any different on the rimworlds? By all means, feel free to get in touch with me via my Discord server if you feel that these changes are too much, too unfair or just plain stupid.
+
+Version 1.15.46 (August 20th 2020)
+
+* Mod is now compatible with the RimWorld 1.2 patch.
+
+Version 1.15.45 (June 2nd 2020)
+
+* Kilts now increase the pain shock threshold of pawns by 10%.
+* The Scottish goods trader is now orbital only.
+	* Author's Note: I never saw it as a land caravan, but I saw it quite often as an orbital trader, so I made this change.
+* Drastically increased the amount of silver and stock carried by the Scottish goods trader.
+
+Version 1.15.42 (June 1st 2020)
+
+* Added the kilt.
+	* Made at tailoring benches using 100 fabric or leather.
+	* +25% social impact.
+	* Good at keeping the wearer cool.
+	* Little to no protection from attack.
+	* Base market value of 150 silver.
+	* Covers waist and legs.
+	* I've tried to make it fit pawns of all sizes as accurately as possible, but - given my appaling art skills - there may be times when it doesn't look right.
+* Renamed 'deep-fried chocolate' to 'deep-fried Mars bar.'
+	* Has the same stats as deep-fried chocolate, and does the same things.
+	* Hilariously awful texture by me. (I tried to make it look somewhat like an actual Mars bar wrapper, though you can tell I failed miserably.)
+	* Mars is a registered trademark of Mars Incorporated and is used without permission, though I will gladly comply with any request to remove the product name.
+* Further reduced how often Scottish goods traders arrive.
+* Increased steel cost of Irn-Bru recipe back to 25 (was 20). The berry cost remains the same.
+* Increased market value of Irn-Bru to 15 (was 1.5).
+	Author's Note: After running the numbers, I found that the old value of Irn-Bru meant that you were losing around 40 silver for every five bottles sold. This change should result in you making a profit - of around 28 silver per five bottles - from making and selling it. Increasing the steel cost means that there is little difference in profit between using steel or berries.
+* Increased the amount of silver carried by Scottish goods traders.
+* Slightly increased the amount of steel carried by Scottish Goods traders to account for the increased steel cost.
+* Irn-Bru, deep-fried chocolate and haggis now appear in their own 'Scottish foods' sub-category under the main 'Foods' category.
+	* This keeps them separate from other items, and makes them easier to find in stockpiles.
+	* Thanks to alexbb721 from my Discord server for suggesting this change.
+
+Version 1.14.35 (May 25th 2020)
+
+* Changed market value of haggis to 10 (was 20).
+* Reduced work amount of bulk recipes.
+* Increased the amount of silver and stock carried by Scottish goods traders.
+* Scottish goods traders should now arrive less often.
+* High cholestrol no longer affects blood filtration.
+* Increased the stack limit of Irn-Bru, deep-fried chocolate and haggis to 100 (was 50).
+* Added recipes to make eight each of Bru, deep-fried chocolate and haggis.
+* Added steel and berries to Scottish goods traders.
+	* They will stock 100 steel and 200 berries, enough to make 10 Bru (if all their stock is purchased).
+	* Orbital traders will not stock more steel or berries than trade caravans.
+
+Version 1.9.27 (May 20th 2020)
+
+* Corrected an issue with the deep-fried chocolate texture that made it look transparent in places.
+
+Version 1.9.26 (May 19th 2020)
+
+* Added the Scottish goods trader.
+	* Buys and sells Irn-Bru, deep-fried chocolate and haggis.
+	* Available as both a land caravan and an orbital trader, the latter having twice as much stock than the former.
+* Added consumption effects to Irn-Bru and deep-fried chocolate.
+	* Eating deep-fried chocolate now builds up cholestrol, which affects blood filtration and pumping. Eating too much carries the risk of a heart attack.
+	* Drinking Irn-Bru now causes a sugar rush, which increases movement speed by up to 30% depending on other health conditions, but wears off quite fast.
+* Increased rot time of deep-fried chocolate to 3 (was 1).
+* Increased market value of deep-fried chocolate to 2 (was 1.5).
+* The bill to make four lots of haggis should now be available at the campfire and fueled stove.
+* The bill to make a single deep-fried chocolate should now be available at the campfire and fueled stove.
+* Irn-Bru is no longer classified as a drug.
+* Increased nutritional and joy values of Irn-Bru to 0.1 (was 0.05)
+* Colonists can now ingest a maximum of three Irn-Brus at once.
+
+Version 1.5.19 (May 14th 2020)
+
+* Fixed work amount of making 4 lots of Irn-Bru from berries being lower than it should.
+* Changed preferability of Irn-Bru to hopefully encourage colonists to drink it without having to be told.
+
+Version 1.5.17 (May 14th 2020)
+
+* Updated deep-fried chocolate with a new texture, created (badly) by me.
+* Updated haggis with a new texture, created (badly) by me.
+* Made a slight tweak to the description for deep-fried chocolate.
+* Made a slight tweak to the description for haggis.
+* Deep-fried chocolate now has the same flammability value as normal chocolate.
+* Added a recipe for Irn-Bru which uses berries instead of steel, at a rate of 40/160 berries for 5/20 bottles.
+* Increased market value of Irn-Bru to 1.5 silver (was 1 silver).
+
+Version 1.4.11 (May 12th 2020)
+
+* Moved Irn-Bru from the 'Manufactured' category to the 'Foods' category.
+* Deep-fried chocolate can now be made at a fueled stove or campfire.
+* Added a recipe to make 20 deep-fried chocolate at once.
+* Added a recipe to make 20 Irn-Bru at once.
+* Added a new recipe: haggis.
+	* Made using any kind of meat at a campfire, electric stove or fueled stove.
+	* Has the same nutritional value as a fine meal.
+	* Provides a +3 bonus to mood for 6 hours when consumed.
+	* Can also be made four at a time.
+	* Requires refrigeration or freezing, with a rot time of 3 days.
+
+Version 1.1.9 (May 8th 2020)
+
+* Added a new recipe: deep-fried chocolate.
+	* Requires 10 chocolate to make 5 deep-fried chocolate.
+	* Has the same nutritional value as a simple meal.
+	* Has half the market value of regular chocolate.
+	* Provides a +3 mood bonus for 6 hours when consumed.
+	* Requires refrigeration or freezing; it will begin rotting a day after manufacture.
+	* I know it's not exactly a Mars Bar, but chances are they would have refused me permission to use the product name. At the end of the day, however, it's still deep-fried chocolate.
+	* I tried to give it a chance of causing a heart attack, but I couldn't get it to work; if you can help, please get in touch.
+* Irn-Bru is no longer flammable.
+* Irn-Bru now requires refrigeration or freezing; it will begin rotting in 3 days after manufacture.
+* Increased mass to 0.5 (was 0.2). This is the same weight as a standard 500ml bottle.
+* Reduced nutritional value to 5% (was 30% by mistake).
+* Reduced recreation value to 5% (was 30% by mistake).
+* Recipe now requires 20 steel, down from 25, but it will still produce 5 bottles.
+* Reduced work amount to 10 (was 20).
+* Animals should no longer consume your Bru, even if they're desperate for nutrition, and your colonists should now seek it out for a recreation bonus.
+
+Version 1.0.1 (May 6th 2020)
+
+- Initial Release.
