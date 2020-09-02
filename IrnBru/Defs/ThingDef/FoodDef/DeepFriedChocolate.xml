@@ -1,8 +1,11 @@
 <Defs>
   <ThingDef ParentName="MealBase">
     <defName>DeepFriedChocolate</defName>
-    <label>deep-fried chocolate</label>
-    <description>Chocolate, covered in batter, then dunked into hot oil and fried.\n\nWhat's not to like?</description>
+    <label>deep-fried Mars bar</label>
+    <description>A Mars bar, covered in batter, then dunked into hot oil and fried.\n\nWhat's not to like?</description>
+	<descriptionHyperlinks>
+		<ThingDef>Chocolate</ThingDef>
+	</descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/DeepFriedChocolate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -37,27 +40,27 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>DFC_HeartAttackChance</hediffDef>
-          <severity>0.15</severity>
+          <severity>0.3</severity>
         </li>
       </outcomeDoers>
     </ingestible>
     <techLevel>Industrial</techLevel>
-	<thingCategories>
-      <li>Foods</li>
-    </thingCategories>
     <comps>
 	<li Class="CompProperties_Rottable">
 		<daysToRotStart>3</daysToRotStart>
 		<rotDestroys>true</rotDestroys>
 	</li>
 	</comps>
+    <thingCategories>
+		<li>Scottish_Foods</li>
+    </thingCategories>
   </ThingDef>
 
   <RecipeDef>
     <defName>DeepFryChocolate</defName>
-    <label>make deep-fried chocolate</label>
-    <description>Deep-fry chocolate to increase its nutritional value.</description>
-    <jobString>Deep-frying chocolate.</jobString>
+    <label>make deep-fried Mars bar</label>
+    <description>Deep-fry chocolate to turn it into a deep-fried Mars bar.</description>
+    <jobString>Making deep-fried Mars bar.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -94,9 +97,9 @@
   
     <RecipeDef>
     <defName>DeepFryFourChocolate</defName>
-    <label>make deep-fried chocolate x4</label>
-    <description>Deep-fry 4 loads of chocolate to increase its nutritional value.</description>
-    <jobString>Deep-frying 4 loads of chocolate.</jobString>
+    <label>make deep-fried Mars bar x4</label>
+    <description>Deep-fry 4 loads of chocolate to turn it into a pile of deep-fried Mars bars.</description>
+    <jobString>Making deep-fried Mars bar x4.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -133,9 +136,9 @@
   
     <RecipeDef>
     <defName>DeepFryEightChocolate</defName>
-    <label>make deep-fried chocolate x8</label>
-    <description>Deep-fry 8 loads of chocolate to increase its nutritional value.</description>
-    <jobString>Deep-frying 8 loads of chocolate.</jobString>
+    <label>make deep-fried Mars bar x8</label>
+    <description>Deep-fry 8 loads of chocolate to turn it into a heap of deep-fried Mars bars.</description>
+    <jobString>Making deep-fried Mars bar x8.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -176,8 +179,8 @@
 	<validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>ate some deep-fried chocolate</label>
-        <description>I can feel my cholestrol levels rising, and it feels good!</description>
+        <label>ate a deep-fried Mars bar</label>
+        <description>It's nice, but I think I can actually FEEL my arteries hardening.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -186,49 +189,50 @@
 <HediffDef>
     <defName>DFC_HeartAttackChance</defName>
     <label>high cholestrol</label>
-    <description>High cholestrol caused by excessive consumption of deep-fried chocolate. This has an adverse effects on blood pumping, and can lead to cardiac arrest if it gets too high.</description>
+    <description>High cholestrol caused by excessive consumption of deep-fried Mars bars. This has an adverse effect on blood pumping, and can lead to cardiac arrest if allowed to get too high.</description>
     <labelNoun>cholestrol</labelNoun>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
+        <severityPerDay>-0.05</severityPerDay>
       </li>
     </comps>
     <stages>
 		<li>
-		<label>initial</label>
+		<label>light</label>
 		<minSeverity>0.3</minSeverity>
 		<capMods>
 		  <li>
 			<capacity>BloodPumping</capacity>
-			<offset>-0.05</offset>
+			<offset>-0.1</offset>
 		  </li>
 		</capMods>
 		</li>
 		<li>
-		<label>severe</label>
+		<label>heavyp</label>
 		<minSeverity>0.6</minSeverity>
 		<capMods>
 		  <li>
 			<capacity>BloodPumping</capacity>
-			<offset>-0.10</offset>
+			<offset>-0.2</offset>
 		  </li>
 		</capMods>
 		</li>
 		  <li>
-			<label>extreme</label>
+			<label>critical</label>
 			<minSeverity>0.9</minSeverity>
+			<lifeThreatening>true</lifeThreatening>
 			<capMods>
 			  <li>
 				<capacity>BloodPumping</capacity>
-				<offset>-0.15</offset>
+				<offset>-0.3</offset>
 			  </li>
 			</capMods>
 			<hediffGivers>
 			<li Class="HediffGiver_Random">
 				<hediff>HeartAttack</hediff>
-				<mtbDays>30</mtbDays>
+				<mtbDays>7</mtbDays>
 					<partsToAffect>
 						<li>Heart</li>
 					</partsToAffect>

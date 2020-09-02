@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>IrnBruMod_KiltApparel</defName>
+    <label>kilt</label>
+    <description>It's quite good at keeping your legs cool, people find it charming, and it makes you feel braver.\n\nJust don't call it a 'skirt.'</description>
+    <graphicData>
+      <texPath>Things/Item/Kilt/Kilt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+	  <MarketValue>200</MarketValue>
+      <Mass>3</Mass>
+      <StuffEffectMultiplierArmor>0.10</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.80</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Kilt/Kilt</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+		<li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Neolithic</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <equippedStatOffsets>
+      <SocialImpact>0.25</SocialImpact>
+	  <PainShockThreshold>0.1</PainShockThreshold>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  </Defs>

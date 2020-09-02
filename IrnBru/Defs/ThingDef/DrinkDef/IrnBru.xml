@@ -3,7 +3,11 @@
     <defName>IrnBru</defName>
     <label>Irn-Bru</label>
 	<socialPropernessMatters>true</socialPropernessMatters>
-    <description>Scotland's other national drink, now available for consumption on the rimworlds.</description>
+    <description>Scotland's other national drink, now available for consumption on the rimworlds.\n\nCan be made using steel or berries.</description>
+	<descriptionHyperlinks>
+		<ThingDef>Steel</ThingDef>
+		<ThingDef>RawBerries</ThingDef>
+	</descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/BruBottle</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -12,7 +16,7 @@
     <rotatable>false</rotatable>
     <stackLimit>100</stackLimit>
     <statBases>
-      <MarketValue>1.5</MarketValue>
+      <MarketValue>10</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
       <Nutrition>0.1</Nutrition>
@@ -43,7 +47,7 @@
     </ingestible>
     <techLevel>Industrial</techLevel>
 	<thingCategories>
-      <li>Foods</li>
+      <li>Scottish_Foods</li>
     </thingCategories>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -77,7 +81,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>25</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -114,7 +118,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>80</count>
+        <count>100</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -151,7 +155,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>160</count>
+        <count>200</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
