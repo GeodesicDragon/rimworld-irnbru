@@ -8,7 +8,7 @@
 		<stockGenerators>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
-				<countRange>7500~10000</countRange>
+				<countRange>20000</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>IrnBru</thingDef>
@@ -33,6 +33,10 @@
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>RawBerries</thingDef>
 				<countRange>800~800</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBruKeg</thingDef>
+				<countRange>0~1</countRange>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>

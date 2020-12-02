@@ -1,3 +1,21 @@
+Version 1.17.63 (November 20th 2020)
+
+* Got loads of Bru? Running out of places to put it? Then you need the new Irn-Bru Keg!
+	* Condenses 1,000 units of Bru into a single storage space.
+	* Kegs can be bought and sold like normal Bru bottles, with a market value of 10,000 silver.
+	* Bru in kegs does not deteriorate.
+	* Preparing a keg requires 1,000 Bru and 100 steel.
+	* Kegs can be filled and emptied at the brewery. Emptying a keg returns the 100 steel to you.
+	* Kegs have a mass of 50kg.
+	* Kegs have a maximum stack size of 5.
+	* Scottish goods traders may have a keg for sale.
+	* Remember to update your stockpiles!
+	* Hilariously bad texture created by me, as per usual.
+* The kilt now turns invisible when equipped, since I never could get it to look good on different body types.
+* Slightly changed the texture of the deep-fried Mars bar.
+* Increased silver carried by Scottish goods traders to a flat 20,000 silver (was between 7,500 and 10,000).
+* Increased commonality of Scottish goods caravans to 4 (was 2).
+
 Version 1.16.59 (September 2nd 2020)
 
 * The kilt no longer covers the waist. (1)
@@ -7,12 +25,12 @@ Version 1.16.59 (September 2nd 2020)
 * The kilt can now be made at a crafting spot. (2)
 * Reduced the number of kilts stocked by the Scottish goods trader to 3 (was 2-6).
 * Slightly changed the text for the deep-fried chocolate thought.
-* Made some changes to how cholestrol works. (3)
-	* Cholestrol now takes longer to clear up.
-	* Cholestrol now reduces blood pumping by 10/20/30% per level (was 5/10/15%).
-	* Eating a deep-fried Mars bars now increases a pawn's choletrol to 0.3 (was 0.15).
-	* Pawns with high cholestrol now have a chance of having a heart attack every 7 days (was 30).
-	* High cholestrol is now marked as life threatening; as a result, you will now be warned of a medical emergency whenever a pawn reaches an extreme level of build-up.
+* Made some changes to how cholesterol works. (3)
+	* Cholesterol now takes longer to clear up.
+	* Cholesterol now reduces blood pumping by 10/20/30% per level (was 5/10/15%).
+	* Eating a deep-fried Mars bars now increases a pawn's cholesterol to 0.3 (was 0.15).
+	* Pawns with high cholesterol now have a chance of having a heart attack every 7 days (was 30).
+	* High cholesterol is now marked as life threatening; as a result, you will now be warned of a medical emergency whenever a pawn reaches an extreme level of build-up.
 * Re-added the Scottish goods trader as a caravan merchant.
 * Slightly increased how often the Scottish goods trader arrives.
 
@@ -20,7 +38,7 @@ AUTHOR'S NOTES
 
 1. This change allows you to use utility items such as smokepop belts with a kilt equipped.
 2. Kilt makers who lived hundreds of years ago didn't exactly have access to a tailoring bench powered by a geothermal generator, so I guess you could say that this change reflects history.
-3. It was possible for pawns to practically live off deep-fried Mars bars; by the time they needed to eat again, the cholestrol would have cleared up, meaning there was no real danger. These changes increase the risks, and add a bit more realism to the mod; living on these things would kill you in the real world, so why should it be any different on the rimworlds? By all means, feel free to get in touch with me via my Discord server if you feel that these changes are too much, too unfair or just plain stupid.
+3. It was possible for pawns to practically live off deep-fried Mars bars; by the time they needed to eat again, the cholesterol would have cleared up, meaning there was no real danger. These changes increase the risks, and add a bit more realism to the mod; living on these things would kill you in the real world, so why should it be any different on the rimworlds? By all means, feel free to get in touch with me via my Discord server if you feel that these changes are too much, too unfair or just plain stupid.
 
 Version 1.15.46 (August 20th 2020)
 

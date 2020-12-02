@@ -283,6 +283,108 @@
       <li>Brewing</li>
     </researchPrerequisites>
   </RecipeDef>
+
+  <!--KEG DEFS-->
+
+    <ThingDef ParentName="ResourceBase">
+    <defName>IrnBruKeg</defName>
+    <label>Irn-Bru keg</label>
+    <description>A steel keg filled with precious orange nectar.</description>
+    <graphicData>
+      <texPath>Things/Item/IrnBruKeg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>10000</MarketValue>
+      <Mass>50</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <!--<intricate>true</intricate>-->
+    <thingCategories>
+      <li>Scottish_Foods</li>
+    </thingCategories>
+  </ThingDef>
+
+        <RecipeDef>
+    <defName>FillBruKeg</defName>
+    <label>fill Irn-Bru keg</label>
+    <description>Put Irn-Bru into a keg for easier storage.</description>
+    <jobString>Filling Bru keg.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>6000</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>IrnBru</li>
+          </thingDefs>
+        </filter>
+        <count>1000</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>      
+    </ingredients>
+    <products>
+      <IrnBruKeg>1</IrnBruKeg>
+    </products>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+          <RecipeDef>
+    <defName>EmptyBruKeg</defName>
+    <label>empty Irn-Bru keg</label>
+    <description>Empty a keg of Irn-Bru.</description>
+    <jobString>Emptying Bru keg.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>6000</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>IrnBruKeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>  
+    </ingredients>
+    <products>
+      <IrnBru>1000</IrnBru>
+      <Steel>100</Steel>
+    </products>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+  <!--THOUGHT-->
   
 	<ThoughtDef>
     <defName>DrankBru</defName>
@@ -296,6 +398,8 @@
       </li>
     </stages>
   </ThoughtDef>
+
+  <!--SUGAR RUSH-->
   
   <HediffDef>
     <defName>IrnBru_SugarRush</defName>

@@ -32,7 +32,7 @@
       <bodyPartGroups>
         <li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Kilt/Kilt</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Kilt/Kilt_Equipped</wornGraphicPath>
       <layers>
         <li>Middle</li>
 		<li>OnSkin</li>
