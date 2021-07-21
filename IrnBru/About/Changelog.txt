@@ -1,3 +1,47 @@
+Version 1.21.87 (July 21st 2021)
+
+* Made some changes to Irn-Bru recipes.
+	* The recipes which formerly made 5 bottles of Bru now produces 1 using 5 steel or 20 berries.
+	* The recipes which formerly made 20 bottles of Bru now produces 4 using 20 steel or 80 berries.
+	* The recipes which formerly made 40 bottles of Bru now produces 8 using 40 steel or 160 berries.
+* Added recipes to make 50 bottles of Irn-Bru using either 250 steel or 1000 berries.
+* Changed rot start time of Irn-Bru to 7 days (was 3).
+* Changed stack limit of kegs to 20 (was 10).
+* Scottish goods traders now stock between 40 and 250 steel (was 500).
+* Scottish goods traders now stock between 160 and 1000 berries (was 800).
+* Fixed Scottish goods traders not appearing as caravans.
+	* Outlander and tribal factions will now send them periodically. Imperial factions will send them too, just not as often.
+	* Tribal caravans carry 75% less silver, Bru, haggis, deep-fried Mars bars, steel and berries, and no kegs, but they will stock up to five times as many kilts.
+	* Imperial caravans carry 25% more silver and food stocks, and twice as much steel, than outlander caravans, but they don't stock kilts.
+	* Thanks to Jamaican Castle from the RimWorld Discord server for helping with patch operations.
+
+Version 1.19.77 (July 11th 2021)
+
+* Mod is now compatible with the RimWorld 1.3 patch.
+* Deep-fried Mars bars no longer cause cholestrol buildup.
+
+Version 1.19.75 (May 19th 2021)
+
+* Added a recipe to make 50 haggis at once.
+* Added a recipe to make 50 deep-fried Mars bars at once.
+* Changed recipes for deep-fried Mars bars to give less finished product.
+	* The recipe that originally made 5 deep-fried Mars bars now makes only 1.
+	* The recipe that originally made 20 deep-fried Mars bars now makes only 4.
+	* The recipe that originally made 40 deep-fried Mars bars now makes only 8.
+	* The amount of chocolate required by each recipe remains unchanged.
+* Colonists will now mix different kinds of meat when making haggis.
+
+Version 1.17.71 (May 5th 2021)
+
+* Irn-Bru no longer provides a sugar rush.
+* Irn-Bru kegs now require 300 Bru - one full stack - and 30 steel to make.
+	* Kegs now have a market value of 3000 silver (was 10000).
+	* Kegs now have a mass of 15kg (was 50kg).
+	* Kegs now stack to 10 (was 5).
+	* Filling and emptying kegs now have a work value of 1800 (was 6000).
+* Colonists will now drink a maximum of 1 Irn-Bru at a time (was 3).
+* Irn-Bru now provides social joy instead of gluttonous.
+
 Version 1.17.63 (November 20th 2020)
 
 * Got loads of Bru? Running out of places to put it? Then you need the new Irn-Bru Keg!

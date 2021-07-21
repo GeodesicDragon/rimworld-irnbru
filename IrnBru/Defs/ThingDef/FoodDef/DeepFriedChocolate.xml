@@ -1,4 +1,7 @@
 <Defs>
+
+  <!--ITEM-->
+
   <ThingDef ParentName="MealBase">
     <defName>DeepFriedChocolate</defName>
     <label>deep-fried Mars bar</label>
@@ -37,12 +40,6 @@
       <chairSearchRadius>25</chairSearchRadius>
 	  <preferability>MealSimple</preferability>
 	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>DFC_HeartAttackChance</hediffDef>
-          <severity>0.3</severity>
-        </li>
-      </outcomeDoers>
     </ingestible>
     <techLevel>Industrial</techLevel>
     <comps>
@@ -56,11 +53,13 @@
     </thingCategories>
   </ThingDef>
 
+  <!--ONE MARS BAR-->
+
   <RecipeDef>
     <defName>DeepFryChocolate</defName>
-    <label>make deep-fried Mars bar</label>
-    <description>Deep-fry chocolate to turn it into a deep-fried Mars bar.</description>
-    <jobString>Making deep-fried Mars bar.</jobString>
+    <label>make a deep-fried Mars bar</label>
+    <description>Create a single deep-fried Mars bar.</description>
+    <jobString>Making a deep-fried Mars bar.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -88,18 +87,20 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <DeepFriedChocolate>5</DeepFriedChocolate>
+      <DeepFriedChocolate>1</DeepFriedChocolate>
     </products>
     <researchPrerequisites>
       <li>Cocoa</li>
     </researchPrerequisites>
   </RecipeDef>
-  
+
+  <!--FOUR MARS BARS-->
+
     <RecipeDef>
     <defName>DeepFryFourChocolate</defName>
-    <label>make deep-fried Mars bar x4</label>
-    <description>Deep-fry 4 loads of chocolate to turn it into a pile of deep-fried Mars bars.</description>
-    <jobString>Making deep-fried Mars bar x4.</jobString>
+    <label>make 4 deep-fried Mars bars</label>
+    <description>Create 4 deep-fried Mars bars.</description>
+    <jobString>Making 4 deep-fried Mars bars.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -127,18 +128,20 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <DeepFriedChocolate>20</DeepFriedChocolate>
+      <DeepFriedChocolate>4</DeepFriedChocolate>
     </products>
     <researchPrerequisites>
       <li>Cocoa</li>
     </researchPrerequisites>
   </RecipeDef>
+
+  <!--EIGHT MARS BARS-->
   
     <RecipeDef>
     <defName>DeepFryEightChocolate</defName>
-    <label>make deep-fried Mars bar x8</label>
-    <description>Deep-fry 8 loads of chocolate to turn it into a heap of deep-fried Mars bars.</description>
-    <jobString>Making deep-fried Mars bar x8.</jobString>
+    <label>make 8 deep-fried Mars bars</label>
+    <description>Create 8 deep-fried Mars bars.</description>
+    <jobString>Making 8 deep-fried Mars bars.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -166,12 +169,55 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <DeepFriedChocolate>40</DeepFriedChocolate>
+      <DeepFriedChocolate>8</DeepFriedChocolate>
     </products>
     <researchPrerequisites>
       <li>Cocoa</li>
     </researchPrerequisites>
   </RecipeDef>
+
+  <!--FIFTY MARS BARS-->
+
+  <RecipeDef>
+    <defName>DeepFryFiftyChocolate</defName>
+    <label>make 50 deep-fried Mars bars</label>
+    <description>Create 50 deep-fried Mars bars.</description>
+    <jobString>Making 50 deep-fried Mars bars.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>22500</workAmount>
+  <recipeUsers>
+    <li>Campfire</li>
+    <li>ElectricStove</li>
+    <li>FueledStove</li>
+  </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>500</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chocolate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DeepFriedChocolate>50</DeepFriedChocolate>
+    </products>
+    <researchPrerequisites>
+      <li>Cocoa</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+  <!--THOUGHT-->
   
 	<ThoughtDef>
     <defName>AteDFC</defName>
@@ -180,65 +226,14 @@
     <stages>
       <li>
         <label>ate a deep-fried Mars bar</label>
-        <description>It's nice, but I think I can actually FEEL my arteries hardening.</description>
+        <description>If there are better things to do with chocolate, I don't want to hear them.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
-    </stages>
-  </ThoughtDef>  
-  
-<HediffDef>
-    <defName>DFC_HeartAttackChance</defName>
-    <label>high cholestrol</label>
-    <description>High cholestrol caused by excessive consumption of deep-fried Mars bars. This has an adverse effect on blood pumping, and can lead to cardiac arrest if allowed to get too high.</description>
-    <labelNoun>cholestrol</labelNoun>
-    <hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1</maxSeverity>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.05</severityPerDay>
+      <li>
+        <label>ate 2 deep-fried Mars bars</label>
+        <description>Mmm, chocolate.</description>
+        <baseMoodEffect>6</baseMoodEffect>
       </li>
-    </comps>
-    <stages>
-		<li>
-		<label>light</label>
-		<minSeverity>0.3</minSeverity>
-		<capMods>
-		  <li>
-			<capacity>BloodPumping</capacity>
-			<offset>-0.1</offset>
-		  </li>
-		</capMods>
-		</li>
-		<li>
-		<label>heavyp</label>
-		<minSeverity>0.6</minSeverity>
-		<capMods>
-		  <li>
-			<capacity>BloodPumping</capacity>
-			<offset>-0.2</offset>
-		  </li>
-		</capMods>
-		</li>
-		  <li>
-			<label>critical</label>
-			<minSeverity>0.9</minSeverity>
-			<lifeThreatening>true</lifeThreatening>
-			<capMods>
-			  <li>
-				<capacity>BloodPumping</capacity>
-				<offset>-0.3</offset>
-			  </li>
-			</capMods>
-			<hediffGivers>
-			<li Class="HediffGiver_Random">
-				<hediff>HeartAttack</hediff>
-				<mtbDays>7</mtbDays>
-					<partsToAffect>
-						<li>Heart</li>
-					</partsToAffect>
-			</li>
-			</hediffGivers>
-		</li>
-	</stages>
-</HediffDef>
+    </stages>
+  </ThoughtDef> 
 </Defs>

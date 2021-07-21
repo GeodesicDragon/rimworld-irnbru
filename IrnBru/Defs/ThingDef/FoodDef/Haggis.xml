@@ -1,4 +1,7 @@
 <Defs>
+
+	<!--ITEM-->
+
   <ThingDef ParentName="MealBase">
     <defName>Haggis</defName>
     <label>haggis</label>
@@ -43,6 +46,8 @@
     </comps>
   </ThingDef>
 
+	<!--ONE HAGGIS-->
+
   <RecipeDef ParentName="CookMealBase">
     <defName>MakeHaggis</defName>
     <label>make haggis</label>
@@ -52,7 +57,7 @@
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
+    <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>600</workAmount>
 	<recipeUsers>
 		<li>Campfire</li>
@@ -74,16 +79,18 @@
     </products>
   </RecipeDef>
 
+  <!--FOUR HAGGIS-->
+
     <RecipeDef ParentName="CookMealBase">
     <defName>MakeFourHaggis</defName>
-    <label>make haggis x4</label>
+    <label>make 4 haggis</label>
     <description>Make 4 haggis from meat.</description>
     <jobString>Making 4 haggis.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
+    <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>1800</workAmount>
 	<recipeUsers>
 		<li>Campfire</li>
@@ -95,7 +102,6 @@
         <filter>
           <categories>
             <li>MeatRaw</li>
-			<li>MeatRaw</li>
           </categories>
         </filter>
         <count>40</count>
@@ -105,17 +111,19 @@
       <Haggis>4</Haggis>
     </products>
   </RecipeDef>
+
+  <!--EIGHT HAGGIS-->
   
     <RecipeDef ParentName="CookMealBase">
     <defName>MakeEightHaggis</defName>
-    <label>make haggis x8</label>
+    <label>make 8 haggis</label>
     <description>Make 8 haggis from meat.</description>
     <jobString>Making 8 haggis.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
+    <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>3600</workAmount>
 	<recipeUsers>
 		<li>Campfire</li>
@@ -127,7 +135,6 @@
         <filter>
           <categories>
             <li>MeatRaw</li>
-			<li>MeatRaw</li>
           </categories>
         </filter>
         <count>80</count>
@@ -137,6 +144,41 @@
       <Haggis>8</Haggis>
     </products>
   </RecipeDef>
+
+  <!--FIFTY HAGGIS-->
+
+    <RecipeDef ParentName="CookMealBase">
+    <defName>MakeFiftyHaggis</defName>
+    <label>make 50 haggis</label>
+    <description>Make 50 haggis.</description>
+    <jobString>Making 50 haggis.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>22500</workAmount>
+	<recipeUsers>
+		<li>Campfire</li>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>500</count>
+      </li>
+    </ingredients>
+    <products>
+      <Haggis>50</Haggis>
+    </products>
+  </RecipeDef>
+
+  <!--THOUGHT DEF-->
 
 	<ThoughtDef>
     <defName>AteHaggis</defName>

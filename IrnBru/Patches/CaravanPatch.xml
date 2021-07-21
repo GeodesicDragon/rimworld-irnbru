@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
+	    <value>
+	        <li>Caravan_Scottish_Goods</li>
+	    </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	    <xpath>/Defs/FactionDef[@Name="TribeBase"]/caravanTraderKinds</xpath>
+	    <value>
+	        <li>Caravan_Scottish_Goods_Tribal</li>
+	    </value>
+	</Operation>
+	
+	<!--<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ludeon.RimWorld.Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="Empire"]/caravanTraderKinds</xpath>
+			<value>
+				<li>Caravan_Scottish_Goods_Imperial</li>
+			</value>
+		</match>
+	</Operation>-->
+	
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+		<xpath>/Defs/FactionDef[defName="Empire"]/caravanTraderKinds</xpath>
+		<value>
+			<li>Caravan_Scottish_Goods_Imperial</li>
+		</value>
+	</Operation>
+</Patch>

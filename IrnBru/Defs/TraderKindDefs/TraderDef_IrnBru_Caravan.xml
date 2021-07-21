@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--OUTLANDER-->
+
+	<TraderKindDef>
+		<defName>Caravan_Scottish_Goods</defName>
+		<label>Scottish goods trader</label>
+		<commonality>2</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>20000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBru</thingDef>
+				<countRange>300~900</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DeepFriedChocolate</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBruMod_KiltApparel</thingDef>
+				<countRange>3</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>40~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RawBerries</thingDef>
+				<countRange>160~1000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBruKeg</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+	
+	<!--TRIBAL-->
+	
+	<TraderKindDef>
+		<defName>Caravan_Scottish_Goods_Tribal</defName>
+		<label>Scottish goods trader</label>
+		<commonality>2</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>5000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBru</thingDef>
+				<countRange>75~225</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis</thingDef>
+				<countRange>75~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DeepFriedChocolate</thingDef>
+				<countRange>75~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBruMod_KiltApparel</thingDef>
+				<countRange>3~15</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>8~62</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RawBerries</thingDef>
+				<countRange>40~250</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+	
+	<!--IMPERIAL-->
+	
+		<TraderKindDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>Caravan_Scottish_Goods_Imperial</defName>
+		<label>Scottish goods trader</label>
+		<commonality>0.5</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>25000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBru</thingDef>
+				<countRange>375~1125</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis</thingDef>
+				<countRange>375~750</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DeepFriedChocolate</thingDef>
+				<countRange>375~750</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>80~500</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RawBerries</thingDef>
+				<countRange>200~1250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>IrnBruKeg</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>
