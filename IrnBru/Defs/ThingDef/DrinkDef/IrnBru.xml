@@ -177,7 +177,7 @@
 
     <RecipeDef>
     <defName>MakeFiftyBru</defName>
-    <label>make Irn-Bru (steel) x8</label>
+    <label>make Irn-Bru (steel) x50</label>
     <description>Produce fifty bottles of Irn-Bru using steel.</description>
     <jobString>Making Irn-Bru from steel.</jobString>
     <workSpeedStat>DrugCookingSpeed</workSpeedStat>
@@ -335,7 +335,7 @@
 
       <RecipeDef>
     <defName>MakeFiftyBruBerries</defName>
-    <label>make Irn-Bru (berries) x8</label>
+    <label>make Irn-Bru (berries) x50</label>
     <description>Produce fifty bottles of Irn-Bru using berries.</description>
     <jobString>Making Irn-Bru from berries.</jobString>
     <workSpeedStat>DrugCookingSpeed</workSpeedStat>

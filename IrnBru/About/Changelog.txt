@@ -1,3 +1,20 @@
+Version 1.21.95 (December 16th 2021)
+
+* Fixed the recipe to make 50 bottles of Bru using berries showing in the bill list as 'Make Irn-Bru (berries) x8.'
+* Fixed the recipe to make 50 bottles of Bru using steel showing in the bill list as 'Make Irn-Bru (steel) x8.'
+
+Version 1.21.93 (July 25th 2021)
+
+* Nudist pawns should no longer wear kilts.
+* Kilts now have a variety of colours.
+* Kilts can now be dyed at a styling station.
+
+Version 1.21.90 (July 23rd 2021)
+
+* Reduced commonality of orbital Scottish goods traders to 1 (was 2).
+* Reduced commonality of outlander and tribal Scottish goods trader caravans to 0.5 (was 2).
+	* I had one arrive at my colony earlier; as soon as it left the map, another one from the same faction appeared.
+
 Version 1.21.87 (July 21st 2021)
 
 * Made some changes to Irn-Bru recipes.

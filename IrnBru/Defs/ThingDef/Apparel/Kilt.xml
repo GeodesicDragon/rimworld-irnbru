@@ -29,6 +29,7 @@
       <li>Apparel</li>
     </thingCategories>
     <apparel>
+	<countsAsClothingForNudity>true</countsAsClothingForNudity>
       <bodyPartGroups>
         <li>Legs</li>
       </bodyPartGroups>
@@ -52,6 +53,27 @@
       <SocialImpact>0.25</SocialImpact>
 	  <PainShockThreshold>0.1</PainShockThreshold>
     </equippedStatOffsets>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.25,0.25,0.25,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.5,0.5,0.5,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.75,0.75,0.75,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <min>(0.1,0.1,0.1,1)</min>
+          <max>(1,1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
   </ThingDef>
   
   </Defs>
