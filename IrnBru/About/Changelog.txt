@@ -1,3 +1,10 @@
+Version 1.22.98 (December 26th 2021)
+
+* Added vegetarian haggis (yes, it exists).
+* Renamed regular haggis to 'Haggis (meat).'
+* Haggis (meat) is now flagged as a meat-based food.
+* Eating haggis no longer provides a mood buff.
+
 Version 1.21.95 (December 16th 2021)
 
 * Fixed the recipe to make 50 bottles of Bru using berries showing in the bill list as 'Make Irn-Bru (berries) x8.'

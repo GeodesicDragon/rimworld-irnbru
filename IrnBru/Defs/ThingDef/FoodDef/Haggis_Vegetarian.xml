@@ -1,9 +1,11 @@
 <Defs>
 
-	<RecipeDef Name="MeatBasedHaggis" Abstract="True">
+	<!--ITEM-->
+	
+	<RecipeDef Name="VegetarianHaggis" Abstract="True">
 		<fixedIngredientFilter>
 			<categories>
-				<li>MeatRaw</li>
+				<li>PlantFoodRaw</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -11,7 +13,7 @@
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>MeatRaw</li>
+				<li>FoodRaw</li>
 			</categories>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
@@ -23,14 +25,12 @@
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
 
-	<!--ITEM-->
-
   <ThingDef ParentName="MealBase">
-    <defName>Haggis</defName>
-    <label>haggis (meat)</label>
-    <description>A Scottish delicacy which is normally made using various sheep parts; on the rimworlds, however, it's made from whatever meat you have lying around.</description>
+    <defName>Haggis_Vegetarian</defName>
+    <label>haggis (vegetarian)</label>
+    <description>A Scottish delicacy which is normally made using various sheep parts; this version, however, uses vegetables instead.</description>
     <graphicData>
-      <texPath>Things/Item/Haggis</texPath>
+      <texPath>Things/Item/VegetarianHaggis</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>(1,1)</drawSize>
     </graphicData>
@@ -44,7 +44,7 @@
     </statBases>
     <ingestible>
       <foodType>Meal</foodType>
-      <ingestEffect>EatMeat</ingestEffect>
+      <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
       <ingestHoldOffsetStanding>
         <northDefault>
@@ -70,11 +70,11 @@
 
 	<!--ONE HAGGIS-->
 
-  <RecipeDef ParentName="MeatBasedHaggis">
-    <defName>MakeHaggis</defName>
-    <label>make haggis (meat)</label>
-    <description>Make haggis from meat.</description>
-    <jobString>Making haggis.</jobString>
+  <RecipeDef ParentName="VegetarianHaggis">
+    <defName>MakeVegHaggis</defName>
+    <label>make haggis (vegetarian)</label>
+    <description>Make haggis from vegetarian ingredients.</description>
+    <jobString>Making vegetarian haggis.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -90,23 +90,23 @@
       <li>
         <filter>
           <categories>
-            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
           </categories>
         </filter>
         <count>10</count>
       </li>
     </ingredients>
     <products>
-      <Haggis>1</Haggis>
+      <Haggis_Vegetarian>1</Haggis_Vegetarian>
     </products>
   </RecipeDef>
 
   <!--FOUR HAGGIS-->
 
-    <RecipeDef ParentName="MeatBasedHaggis">
-    <defName>MakeFourHaggis</defName>
-    <label>make 4 haggis (meat)</label>
-    <description>Make 4 haggis from meat.</description>
+    <RecipeDef ParentName="VegetarianHaggis">
+    <defName>MakeFourVegHaggis</defName>
+    <label>make 4 haggis (vegetarian)</label>
+    <description>Make 4 haggis from vegetarian ingredients.</description>
     <jobString>Making 4 haggis.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
@@ -123,24 +123,24 @@
       <li>
         <filter>
           <categories>
-            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
           </categories>
         </filter>
         <count>40</count>
       </li>
     </ingredients>
     <products>
-      <Haggis>4</Haggis>
+      <Haggis_Vegetarian>4</Haggis_Vegetarian>
     </products>
   </RecipeDef>
 
   <!--EIGHT HAGGIS-->
   
-    <RecipeDef ParentName="MeatBasedHaggis">
-    <defName>MakeEightHaggis</defName>
-    <label>make 8 haggis (meat)</label>
-    <description>Make 8 haggis from meat.</description>
-    <jobString>Making 8 haggis.</jobString>
+    <RecipeDef ParentName="VegetarianHaggis">
+    <defName>MakeEightVegHaggis</defName>
+    <label>make 8 haggis (vegetarian)</label>
+    <description>Make 8 haggis from vegetarian ingredients.</description>
+    <jobString>Making 8 vegetarian haggis.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -156,24 +156,24 @@
       <li>
         <filter>
           <categories>
-            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
           </categories>
         </filter>
         <count>80</count>
       </li>
     </ingredients>
     <products>
-      <Haggis>8</Haggis>
+      <Haggis_Vegetarian>8</Haggis_Vegetarian>
     </products>
   </RecipeDef>
 
   <!--FIFTY HAGGIS-->
 
-    <RecipeDef ParentName="MeatBasedHaggis">
-    <defName>MakeFiftyHaggis</defName>
-    <label>make 50 haggis (meat)</label>
-    <description>Make 50 haggis from meat.</description>
-    <jobString>Making 50 haggis.</jobString>
+    <RecipeDef ParentName="VegetarianHaggis">
+    <defName>MakeFiftyVegHaggis</defName>
+    <label>make 50 haggis (vegetarian)</label>
+    <description>Make 50 haggis from vegetarian ingredients.</description>
+    <jobString>Making 50 vegetarian haggis.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
@@ -189,14 +189,14 @@
       <li>
         <filter>
           <categories>
-            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
           </categories>
         </filter>
         <count>500</count>
       </li>
     </ingredients>
     <products>
-      <Haggis>50</Haggis>
+      <Haggis_Vegetarian>50</Haggis_Vegetarian>
     </products>
   </RecipeDef>
 </Defs>
