@@ -19,6 +19,10 @@
 				<countRange>300~600</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis_Vegetarian</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>DeepFriedChocolate</thingDef>
 				<countRange>300~600</countRange>
 			</li>

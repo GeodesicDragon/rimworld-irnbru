@@ -21,6 +21,10 @@
 				<countRange>300~600</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis_Vegetarian</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>DeepFriedChocolate</thingDef>
 				<countRange>300~600</countRange>
 			</li>
@@ -63,6 +67,10 @@
 				<countRange>75~150</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis_Vegetarian</thingDef>
+				<countRange>75~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>DeepFriedChocolate</thingDef>
 				<countRange>75~150</countRange>
 			</li>
@@ -98,6 +106,10 @@
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Haggis</thingDef>
+				<countRange>375~750</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Haggis_Vegetarian</thingDef>
 				<countRange>375~750</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">

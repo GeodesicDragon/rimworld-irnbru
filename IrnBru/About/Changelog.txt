@@ -1,3 +1,7 @@
+Version 1.22.99 (January 27th 2022)
+
+* Fixed traders not stocking vegetarian haggis.
+
 Version 1.22.98 (December 26th 2021)
 
 * Added vegetarian haggis (yes, it exists).
