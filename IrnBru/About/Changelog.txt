@@ -1,3 +1,11 @@
+Version 1.22.104 (March 8th 2022)
+
+* Pawns should no longer prefer Irn-Bru over normal meals.
+* Reduced nutrition provided by Irn-Bru to 5% (was 10).
+* Increased joy provided by Irn-Bru to 15% (was 10).
+* Pawns should now seek Irn-Bru as a source of recreation by themselves.
+* Increased maximum amount of Irn-Bru that can be consumed at once to 2 (was 1).
+
 Version 1.22.99 (January 27th 2022)
 
 * Fixed traders not stocking vegetarian haggis.

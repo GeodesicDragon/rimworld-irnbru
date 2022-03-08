@@ -20,13 +20,13 @@
       <MarketValue>10</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
-      <Nutrition>0.1</Nutrition>
+      <Nutrition>0.05</Nutrition>
     </statBases>
     <ingestible>
       <foodType>Fluid, Processed</foodType>
 	  <tasteThought>DrankBru</tasteThought>
       <joyKind>Social</joyKind>
-      <joy>0.1</joy>
+      <joy>0.15</joy>
       <nurseable>true</nurseable>
       <ingestSound>Ingest_Beer</ingestSound>
       <ingestHoldOffsetStanding>
@@ -38,8 +38,8 @@
       <ingestReportString>Drinking {0}.</ingestReportString>
       <chairSearchRadius>25</chairSearchRadius>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-	  <preferability>RawTasty</preferability>
-	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>NeverForNutrition</preferability>
+	  <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
     </ingestible>
     <techLevel>Industrial</techLevel>
 	<thingCategories>
