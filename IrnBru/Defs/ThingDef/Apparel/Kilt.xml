@@ -19,7 +19,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
 	  <MarketValue>200</MarketValue>
-      <Mass>3</Mass>
+      <Mass>0.3</Mass>
       <StuffEffectMultiplierArmor>0.10</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.80</StuffEffectMultiplierInsulation_Heat>

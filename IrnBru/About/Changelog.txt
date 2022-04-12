@@ -1,3 +1,11 @@
+Version 1.30.107 (April 13th 2022)
+
+* Added seven achievements (requires Vanilla Achievements Expanded).
+* Added a patch, applied if Vanilla Cooking Expanded is enabled, which allows you to make deep-fried Mars bars at a deep fryer.
+* The patch which adds Scottish goods traders to the imperial faction now properly checks to see if the Royalty DLC is enabled.
+* Reduced the weight of kilts to 0.3kg (was 3, for reasons even I can't fathom).
+* Tidied up the Patches folder by putting files into their relevant folders.
+
 Version 1.22.104 (March 8th 2022)
 
 * Pawns should no longer prefer Irn-Bru over normal meals.

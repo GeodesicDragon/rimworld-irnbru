@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="DeepFryChocolate" or defName="DeepFryFourChocolate" or defName="DeepFryEightChocolate" or defName="DeepFryFiftyChocolate"]/recipeUsers</xpath>
+			<value>
+				<li>VCE_DeepFrier</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

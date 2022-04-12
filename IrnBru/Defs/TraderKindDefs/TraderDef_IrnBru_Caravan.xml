@@ -91,7 +91,7 @@
 	
 	<!--IMPERIAL-->
 	
-		<TraderKindDef MayRequire="Ludeon.RimWorld.Royalty">
+		<TraderKindDef>
 		<defName>Caravan_Scottish_Goods_Imperial</defName>
 		<label>Scottish goods trader</label>
 		<commonality>0.5</commonality>

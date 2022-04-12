@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Achievements Expanded</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+	    <xpath>Defs</xpath>
+	    <value>
+					
+			<!--ITEMS-->
+			
+			<AchievementsExpanded.AchievementDef>
+				<defName>IrnBru_Achievement_IrnBru</defName>
+				<label>BruFest</label>
+				<description>Make 1000 bottles of Irn-Bru</description>
+				<tab>IrnBru_AchievementTab</tab>
+				
+				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+					<def>IrnBru</def>
+					<count>1000</count>
+				</tracker>
+				
+				<texPath>Things/Item/BruBottle/BruBottle_b</texPath>
+				<points>10</points>
+			</AchievementsExpanded.AchievementDef>
+			
+			<AchievementsExpanded.AchievementDef>
+				<defName>IrnBru_Achievement_IrnBruKegs</defName>
+				<label>Let The Good Times Flow</label>
+				<description>Stockpile 100 kegs of Irn-Bru</description>
+				<tab>IrnBru_AchievementTab</tab>
+				
+				<tracker Class="AchievementsExpanded.ItemTracker">
+					<def>IrnBruKeg</def>
+					<count>100</count>
+				</tracker>
+				
+				<texPath>Things/Item/IrnBruKeg</texPath>
+				<points>100</points>
+			</AchievementsExpanded.AchievementDef>
+			
+			<AchievementsExpanded.AchievementDef>
+				<defName>IrnBru_Achievement_DeepFriedChocolate</defName>
+				<label>Mars A-Snacks!</label>
+				<description>Make 1000 deep-fried Mars bars</description>
+				<tab>IrnBru_AchievementTab</tab>
+				
+				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+					<def>DeepFriedChocolate</def>
+					<count>1000</count>
+				</tracker>
+				
+				<texPath>Things/Item/DeepFriedChocolate</texPath>
+				<points>25</points>
+			</AchievementsExpanded.AchievementDef>
+			
+			<AchievementsExpanded.AchievementDef>
+				<defName>IrnBru_Achievement_Haggis</defName>
+				<label>Great Chieftain O’ the Puddin-Race</label>
+				<description>Make 1000 regular haggis</description>
+				<tab>IrnBru_AchievementTab</tab>
+				
+				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+					<def>Haggis</def>
+					<count>1000</count>
+				</tracker>
+				
+				<texPath>Things/Item/Haggis</texPath>
+				<points>25</points>
+			</AchievementsExpanded.AchievementDef>
+			
+			<AchievementsExpanded.AchievementDef>
+				<defName>IrnBru_Achievement_VegetarianHaggis</defName>
+				<label>How Is It Made?</label>
+				<description>Make 1000 vegetarian haggis</description>
+				<tab>IrnBru_AchievementTab</tab>
+				
+				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+					<def>Haggis_Vegetarian</def>
+					<count>1000</count>
+				</tracker>
+				
+				<texPath>Things/Item/VegetarianHaggis</texPath>
+				<points>25</points>
+			</AchievementsExpanded.AchievementDef>
+			
+			<AchievementsExpanded.AchievementDef>
+				<defName>IrnBru_Achievement_Kilt</defName>
+				<label>Scottish Fashion Week</label>
+				<description>Make 100 kilts</description>
+				<tab>IrnBru_AchievementTab</tab>
+				
+				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+					<def>IrnBruMod_KiltApparel</def>
+					<count>100</count>
+				</tracker>
+				
+				<texPath>Things/Item/Kilt/Kilt</texPath>
+				<points>50</points>
+			</AchievementsExpanded.AchievementDef>
+			
+			<AchievementsExpanded.AchievementDef>
+				<defName>IrnBru_Achievement_LegendaryKilt</defName>
+				<label>Still Not A Dress</label>
+				<description>Craft a kilt of legendary quality</description>
+				<tab>IrnBru_AchievementTab</tab>
+				
+				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+					<def>IrnBruMod_KiltApparel</def>
+					<quality>Legendary</quality>
+					<count>1</count>
+				</tracker>
+				
+				<texPath>Things/Saltire</texPath>
+				<points>50</points>
+			</AchievementsExpanded.AchievementDef>
+			
+	    </value>
+    </match>
+</Operation>
+	
+</Patch>

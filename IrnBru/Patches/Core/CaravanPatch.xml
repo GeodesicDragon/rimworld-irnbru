@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
+	    <value>
+	        <li>Caravan_Scottish_Goods</li>
+	    </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	    <xpath>/Defs/FactionDef[@Name="TribeBase"]/caravanTraderKinds</xpath>
+	    <value>
+	        <li>Caravan_Scottish_Goods_Tribal</li>
+	    </value>
+	</Operation>
+		
+</Patch>
