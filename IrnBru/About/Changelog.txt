@@ -1,3 +1,11 @@
+Version 1.30.109 (October 6th 2022)
+
+* Mod is now compatible with the RimWorld 1.4 patch.
+
+Version 1.30.108 (April 22nd 2022)
+
+* Vanilla Achievements Expanded: Fixed typo in 'Scottish Fashion Week' achievement.
+
 Version 1.30.107 (April 13th 2022)
 
 * Added seven achievements (requires Vanilla Achievements Expanded).
