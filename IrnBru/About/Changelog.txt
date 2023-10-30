@@ -1,3 +1,14 @@
+Version 1.30.115 (October 30th 2023)
+
+* Reduced the market value of regular haggis to 5 (was 10).
+* Reduced the market value of vegetarian haggis to 5 (was 10).
+* Vanilla Achievements Expanded: Changed the criteria for the 'Brufest' achievement to stockpile Irn-Bru. (1)
+* Vanilla Achievements Expanded: Changed the criteria for the 'Mars A-Snacks!' achievement to stockpile deep fried Mars bars. (1)
+* Vanilla Achievements Expanded: Changed the criteria for the 'Great Chieftain O’ the Puddin-Race' achievement to stockpile regular haggis. (1)
+* Vanilla Achievements Expanded: Changed the criteria for the 'How Is It Made?' achievement to stockpile vegetarian haggis. (1)
+
+1. If you're loading a saved game, you will need to regenerate your achievements using dev mode in order for these to be tracked properly, otherwise VAE will continue to track how many times you perform the recipes to make them, instead of tracking how many you have.
+
 Version 1.30.109 (October 6th 2022)
 
 * Mod is now compatible with the RimWorld 1.4 patch.

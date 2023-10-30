@@ -37,7 +37,7 @@
     <rotatable>false</rotatable>
     <stackLimit>100</stackLimit>
     <statBases>
-      <MarketValue>10</MarketValue>
+      <MarketValue>5</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
       <Nutrition>0.9</Nutrition>

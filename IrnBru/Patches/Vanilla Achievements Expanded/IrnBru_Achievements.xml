@@ -15,10 +15,10 @@
 			<AchievementsExpanded.AchievementDef>
 				<defName>IrnBru_Achievement_IrnBru</defName>
 				<label>BruFest</label>
-				<description>Make 1000 bottles of Irn-Bru</description>
+				<description>Stockpile 1000 bottles of Irn-Bru</description>
 				<tab>IrnBru_AchievementTab</tab>
 				
-				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+				<tracker Class="AchievementsExpanded.ItemTracker">
 					<def>IrnBru</def>
 					<count>1000</count>
 				</tracker>
@@ -45,10 +45,10 @@
 			<AchievementsExpanded.AchievementDef>
 				<defName>IrnBru_Achievement_DeepFriedChocolate</defName>
 				<label>Mars A-Snacks!</label>
-				<description>Make 1000 deep-fried Mars bars</description>
+				<description>Stockpile 1000 deep-fried Mars bars</description>
 				<tab>IrnBru_AchievementTab</tab>
 				
-				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+				<tracker Class="AchievementsExpanded.ItemTracker">
 					<def>DeepFriedChocolate</def>
 					<count>1000</count>
 				</tracker>
@@ -60,10 +60,10 @@
 			<AchievementsExpanded.AchievementDef>
 				<defName>IrnBru_Achievement_Haggis</defName>
 				<label>Great Chieftain O’ the Puddin-Race</label>
-				<description>Make 1000 regular haggis</description>
+				<description>Stockpile 1000 regular haggis</description>
 				<tab>IrnBru_AchievementTab</tab>
 				
-				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+				<tracker Class="AchievementsExpanded.ItemTracker">
 					<def>Haggis</def>
 					<count>1000</count>
 				</tracker>
@@ -75,10 +75,10 @@
 			<AchievementsExpanded.AchievementDef>
 				<defName>IrnBru_Achievement_VegetarianHaggis</defName>
 				<label>How Is It Made?</label>
-				<description>Make 1000 vegetarian haggis</description>
+				<description>Stockpile 1000 vegetarian haggis</description>
 				<tab>IrnBru_AchievementTab</tab>
 				
-				<tracker Class="AchievementsExpanded.ItemCraftTracker">
+				<tracker Class="AchievementsExpanded.ItemTracker">
 					<def>Haggis_Vegetarian</def>
 					<count>1000</count>
 				</tracker>
